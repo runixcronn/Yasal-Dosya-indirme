@@ -6,6 +6,19 @@ import generateMessage from "./utilities/generateMessage";
 import "./styles.css";
 import { detect } from "detect-browser";
 
+/* 
+
+Not:
+
+https://github.com/DamonOehlman/detect-browser
+
+Kullandığımız tarayıcıyı, 
+işletim sistemini ve cihazı belirlemek için detect-browser kütüphanesini kullanıyoruz.
+Bu kütüphane, detect fonksiyonunu kullanarak, kullanıcının tarayıcısını,
+işletim sistemini ve cihazını belirleyen bir nesne döndürür.
+
+*/
+
 export default function App({ serverGeneratedFileId }) {
   const [userData, setUserData] = useState({
     userId: crypto.randomUUID(),
